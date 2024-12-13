@@ -1,0 +1,30 @@
+.mappls-map-container {
+   border-radius: 12px;
+   overflow: hidden;
+ }
+ 
+ .mappls-popup {
+   max-width: 300px;
+   font-family: 'Inter', sans-serif;
+ }
+ 
+ .mappls-popup-content {
+   padding: 1rem;
+   border-radius: 8px;
+ }
+ 
+ .mappls-popup-content strong {
+   color: var(--primary-color);
+   display: block;
+   margin-bottom: 0.5rem;
+ }
+ 
+ .mappls-marker {
+   cursor: pointer;
+   transition: transform 0.3s ease;
+ }
+ 
+ .mappls-marker:hover {
+   transform: scale(1.1);
+ }
+ 

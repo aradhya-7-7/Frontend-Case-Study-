@@ -1,0 +1,34 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "photo": "https://randomuser.me/api/portraits/women/1.jpg",
+      "designation": "Senior Software Engineer",
+      "department": "Engineering",
+      "description": "Full-stack developer with 5 years of experience",
+      "address": "742, Indiranagar, Bangalore",
+      "coordinates": [12.9716, 77.6441],
+      "contact": {
+        "email": "sarah.j@example.com",
+        "phone": "+91 98765 43210",
+        "linkedin": "linkedin.com/in/sarahj",
+        "github": "github.com/sarahj"
+      },
+      "skills": ["React", "Node.js", "MongoDB", "AWS", "Docker"],
+      "languages": ["English", "Hindi", "Kannada"],
+      "education": [
+        {
+          "degree": "B.Tech in Computer Science",
+          "institution": "IIT Bangalore",
+          "year": "2018"
+        }
+      ],
+      "interests": ["Open Source", "Tech Blogging", "Hiking"],
+      "achievements": [
+        "Led team of 5 developers for major product launch",
+        "Published 10+ technical articles"
+      ]
+    }
+  ]
+}

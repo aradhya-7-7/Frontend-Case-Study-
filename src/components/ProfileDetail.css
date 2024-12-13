@@ -1,0 +1,157 @@
+.profile-detail-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.75);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1000;
+   backdrop-filter: blur(5px);
+ }
+ 
+ .profile-detail-content {
+   background: white;
+   border-radius: 20px;
+   padding: 2rem;
+   width: 90%;
+   max-width: 1200px;
+   max-height: 90vh;
+   overflow-y: auto;
+   position: relative;
+   animation: slideIn 0.3s ease-out;
+ }
+ 
+ .close-btn {
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   font-size: 2rem;
+   background: none;
+   border: none;
+   cursor: pointer;
+   color: #666;
+   transition: color 0.3s ease;
+ }
+ 
+ .close-btn:hover {
+   color: #000;
+ }
+ 
+ .profile-header {
+   display: flex;
+   gap: 2rem;
+   margin-bottom: 2rem;
+   align-items: center;
+ }
+ 
+ .detail-photo {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 4px solid white;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .profile-title h2 {
+   margin: 0;
+   font-size: 2rem;
+   color: #2d3748;
+ }
+ 
+ .designation {
+   color: #4a5568;
+   font-size: 1.2rem;
+   margin: 0.5rem 0;
+ }
+ 
+ .department {
+   color: #718096;
+   font-size: 1rem;
+ }
+ 
+ .profile-info-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 2rem;
+   margin-top: 2rem;
+ }
+ 
+ .info-section {
+   background: #f8fafc;
+   padding: 1.5rem;
+   border-radius: 12px;
+ }
+ 
+ .info-section h3 {
+   color: #2d3748;
+   margin-bottom: 1rem;
+   font-size: 1.2rem;
+ }
+ 
+ .skills-list, .languages-list, .interests-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.5rem;
+ }
+ 
+ .skill-tag, .language-tag, .interest-tag {
+   background: #e2e8f0;
+   padding: 0.5rem 1rem;
+   border-radius: 20px;
+   font-size: 0.9rem;
+   color: #4a5568;
+ }
+ 
+ .project-card {
+   background: white;
+   padding: 1rem;
+   border-radius: 8px;
+   margin-bottom: 1rem;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+ }
+ 
+ .social-links {
+   display: flex;
+   gap: 1rem;
+ }
+ 
+ .social-link {
+   color: #3b82f6;
+   text-decoration: none;
+   padding: 0.5rem 1rem;
+   border: 1px solid #3b82f6;
+   border-radius: 20px;
+   transition: all 0.3s ease;
+ }
+ 
+ .social-link:hover {
+   background: #3b82f6;
+   color: white;
+ }
+ 
+ @keyframes slideIn {
+   from {
+     transform: translateY(50px);
+     opacity: 0;
+   }
+   to {
+     transform: translateY(0);
+     opacity: 1;
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   .profile-header {
+     flex-direction: column;
+     text-align: center;
+   }
+ 
+   .profile-info-grid {
+     grid-template-columns: 1fr;
+   }
+ }
+ 
